@@ -1,0 +1,11 @@
+@media (min-width: $x-large) {
+  header {
+    .container {
+      nav {
+        ul {
+          width: 45%;
+        }
+      }
+    }
+  }
+}

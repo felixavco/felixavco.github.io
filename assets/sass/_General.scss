@@ -1,0 +1,42 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* - Vars CSS - */
+:root {
+  --mainColor: #21618C;
+}
+
+
+/* -- Vars SCSS -- */
+/* - Colors - */
+$white: #eee;
+/* - Fonts - */
+$mainFont: 'Roboto', sans-serif;
+$codeFont: 'Source Code Pro', monospace;
+/* - Screen Sizes - */
+$Landscape: 550px;
+$tablet: 700px;
+$small: 992px;
+$large: 1200px;
+$x-large: 1600px;
+
+
+
+.container{
+  min-width: 300px;
+  max-width: 2100px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@mixin flex($fd: column, $jc: center, $ai: center ){
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}

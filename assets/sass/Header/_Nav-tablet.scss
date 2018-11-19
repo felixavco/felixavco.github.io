@@ -1,0 +1,42 @@
+@media (min-width: $tablet) {
+  header {
+    top: 0;
+    height: 9vh;
+
+    .btn-menu {
+      display: none;
+    }
+
+    .container {
+      @include flex(row, flex-start, center); //REMEMBER TO CHANGE THIS
+
+      nav {
+        position: relative;
+        background: transparent;
+        top: 0;
+        left: 0;
+        height: 100%;
+        // @include flex(row, flex-end, center);
+        display: none;
+
+        ul {
+          height: 100%;
+          width: 100%;
+          padding: 0 1rem;
+          @include flex(row, flex-end, center);
+
+          li {
+            padding: 0 0.5rem;
+            a {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-hide {
+      transform: translateY(0);
+    }
+  }
+}
